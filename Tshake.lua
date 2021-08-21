@@ -1334,7 +1334,7 @@ if Chat_Type == 'GroupBot' then
 if ChekAdd(msg.chat_id_) == true then
 if text == "قفل الدردشه" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
 database:set(bot_id.."Tshake:Lock:text"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","💢️┇تم قفـل الدردشه")  
+Reply_Status(msg,msg.sender_user_id_,"lock","💢️┇تم قفـلت الدردشه على الهطوف ")  
 return false
 end 
 if text == "قفل الاضافه" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
