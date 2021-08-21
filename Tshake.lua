@@ -136,9 +136,9 @@ end
 return var
 end 
 function Get_Rank(user_id,chat_id)
-if tonumber(user_id) == tonumber(959965834) then  
+if tonumber(user_id) == tonumber(1940696355) then  
 var = "مطور السورس"
-elseif tonumber(user_id) == tonumber(633004612) then  
+elseif tonumber(user_id) == tonumber(1940696355) then  
 var = "مطور السورس"
 elseif DevTshakee(user_id) == true then
 var = "المطور الاساسي"  
@@ -589,7 +589,7 @@ end
 end
 if database:get(bot_id.."Tshake:Tshake:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
 if text == "الغاء" or text == "الغاء ✖" then   
-send(msg.chat_id_, msg.id_,"📫┇تم الغاء الاذاعه") 
+send(msg.chat_id_, msg.id_,"يلممحون ┇تم الغاء الاذاعه") 
 database:del(bot_id.."Tshake:Tshake:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end 
@@ -1152,9 +1152,9 @@ return false
 end 
 database:del(bot_id.."Tshake:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
 https.request("https://api.telegram.org/bot"..token.."/setChatDescription?chat_id="..msg.chat_id_.."&description="..text) 
-send(msg.chat_id_, msg.id_,"📮┇تم تغيير وصف المجموعه")   
+send(msg.chat_id_, msg.id_,"📮┇تم غيرت لك الوصف ياوحش")   
 return false  
-end 
+end  
 --------------------------------------------------------------------------------------------------------------
 if database:get(bot_id.."Tshake:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
 if text == "الغاء" then 
@@ -1164,13 +1164,13 @@ return false
 end 
 database:del(bot_id.."Tshake:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
 database:set(bot_id.."Tshake:Get:Welcome:Group"..msg.chat_id_,text) 
-send(msg.chat_id_, msg.id_,"📮┇تم حفظ ترحيب المجموعه")   
+send(msg.chat_id_, msg.id_,"تم حفظت لك الترحيب يوحش")   
 return false   
 end
 --------------------------------------------------------------------------------------------------------------
 if database:get(bot_id.."Tshake:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) then
 if text == "الغاء" then
-send(msg.chat_id_,msg.id_,"📥┇تم الغاء حفظ الرابط")       
+send(msg.chat_id_,msg.id_,"📥┇تم لغيت لك حفظ الرابط")       
 database:del(bot_id.."Tshake:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
 return false
 end
@@ -1185,7 +1185,7 @@ end
 
 if database:get(bot_id.."Tshake:Tshake:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
 if text == "الغاء" or text == "الغاء ✖" then   
-send(msg.chat_id_, msg.id_,"📫┇تم الغاء الاذاعه للخاص") 
+send(msg.chat_id_, msg.id_,"📫┇تم يوحش الغاء الاذاعه للخاص") 
 database:del(bot_id.."Tshake:Tshake:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end 
