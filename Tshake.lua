@@ -1371,7 +1371,7 @@ return false
 end 
 if text == "قفل التعديل" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
 database:set(bot_id.."Tshake:Lock:edit"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","💢️┇تم قفـل تعديل")  
+Reply_Status(msg,msg.sender_user_id_,"lock","💢️┇تم قفلت ياوحش التعديل")  
 return false
 end 
 if text == "قفل تعديل الميديا" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
